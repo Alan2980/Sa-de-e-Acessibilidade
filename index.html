@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clínica de Especialidades Saúde para Todos</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Script Adopt LGPD (Substitua SEU_ID_DO_ADOPT pelo ID gerado na sua conta) -->
-  <script src="https://cdn.goadopt.io/pe/tag.js" data-adp-id="SEU_ID_DO_ADOPT"></script>
+
+  <!-- Script Adopt LGPD -->
+  <meta name="adopt-website-id" content="e0d17f3c-b4a4-48e5-a9ee-ec1622c004f4" />
+  <script src="//tag.goadopt.io/injector.js?website_code=e0d17f3c-b4a4-48e5-a9ee-ec1622c004f4" class="adopt-injector"></script>
 </head>
 <body>
- 
+
   <!-- Atalho Acessibilidade -->
   <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
- 
+
   <!-- Barra de Ferramentas de Acessibilidade -->
   <aside class="barra-acessibilidade" aria-label="Ferramentas de Acessibilidade">
     <div class="container">
@@ -23,7 +25,7 @@
       <button id="btn-alto-contraste" aria-label="Alternar modo de alto contraste" aria-pressed="false">Alto Contraste</button>
     </div>
   </aside>
- 
+
   <!-- Cabeçalho Principal -->
   <header class="header-principal">
     <div class="container">
@@ -43,10 +45,10 @@
       </nav>
     </div>
   </header>
- 
+
   <!-- Conteúdo Principal -->
   <main id="conteudo-principal">
- 
+
     <!-- Seção Especialidades -->
     <section id="especialidades" aria-labelledby="titulo-especialidades">
       <div class="container">
@@ -60,37 +62,37 @@
         </ul>
       </div>
     </section>
- 
-    <!-- Seção Corpo Clínico (Imagens embutidas via código SVG/Base64) -->
+
+    <!-- Seção Corpo Clínico -->
     <section id="corpo-clinico" aria-labelledby="titulo-corpo-clinico">
       <div class="container">
         <h2 id="titulo-corpo-clinico">Corpo Clínico</h2>
         <div class="cards-medicos">
-         
+          
           <!-- Card Dr. Carlos Eduardo -->
           <article class="card-medico">
-<img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80"
-             alt="Foto de perfil do Dr. Carlos Eduardo, homem sorrindo vestindo jaleco médico e estetoscópio"
-             class="foto-medico">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80"
+                 alt="Foto de perfil do Dr. Carlos Eduardo, homem sorrindo vestindo jaleco médico e estetoscópio"
+                 class="foto-medico">
             <h3>Dr. Carlos Eduardo</h3>
             <p><strong>CRM:</strong> 123456-SP</p>
             <p><strong>Especialidade:</strong> Diretor Médico e Geriatra</p>
           </article>
- 
+
           <!-- Card Dra. Ana Maria Silva -->
           <article class="card-medico">
-<img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=400"
-             alt="Foto da Dra. Ana Maria Silva"
-             class="foto-medico">
+            <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=400"
+                 alt="Foto da Dra. Ana Maria Silva"
+                 class="foto-medico">
             <h3>Dra. Ana Maria Silva</h3>
             <p><strong>CRM:</strong> 654321-SP</p>
             <p><strong>Especialidade:</strong> Fisioterapeuta Especialista em Mobilidade</p>
           </article>
- 
+
         </div>
       </div>
     </section>
- 
+
     <!-- Seção Convênios -->
     <section id="convenios" aria-labelledby="titulo-convenios">
       <div class="container">
@@ -103,9 +105,9 @@
         </ul>
       </div>
     </section>
- 
+
   </main>
- 
+
   <!-- Botão WhatsApp -->
   <a href="https://wa.me/5500000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Agendar via WhatsApp">
     <svg class="whatsapp-icon-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -113,23 +115,31 @@
     </svg>
     <span>Agende por WhatsApp</span>
   </a>
- 
+
+  <!-- Rodapé com Link LGPD -->
   <footer>
     <div class="container" id="contato">
       <p>&copy; 2026 Clínica Saúde para Todos. Todos os direitos reservados.</p>
+      <p>
+        <a href="politica-de-privacidade.html" style="color: inherit; text-decoration: underline;">
+          Política de Privacidade
+        </a>
+      </p>
     </div>
   </footer>
-<!-- Widget VLibras -->
-<div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
+
+  <!-- Widget VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
   </div>
-</div>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  
   <script src="script.js"></script>
 </body>
 </html>
