@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica de Especialidades Saúde para Todos</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Script Adopt LGPD (Substitua SEU_ID_DO_ADOPT pelo ID gerado na sua conta) -->
+  <script src="https://cdn.goadopt.io/pe/tag.js" data-adp-id="SEU_ID_DO_ADOPT"></script>
+</head>
+<body>
+ 
+  <!-- Atalho Acessibilidade -->
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+ 
+  <!-- Barra de Ferramentas de Acessibilidade -->
+  <aside class="barra-acessibilidade" aria-label="Ferramentas de Acessibilidade">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button id="btn-aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+      <button id="btn-diminuir-fonte" aria-label="Diminuir tamanho do texto">A-</button>
+      <button id="btn-reset-fonte" aria-label="Restaurar tamanho do texto padrão">A</button>
+      <button id="btn-alto-contraste" aria-label="Alternar modo de alto contraste" aria-pressed="false">Alto Contraste</button>
+    </div>
+  </aside>
+ 
+  <!-- Cabeçalho Principal -->
+  <header class="header-principal">
+    <div class="container">
+      <div class="logo-container">
+        <svg class="logo-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M19 10.5H13.5V5C13.5 4.17 12.83 3.5 12 3.5C11.17 3.5 10.5 4.17 10.5 5V10.5H5C4.17 10.5 3.5 11.17 3.5 12C3.5 12.83 4.17 13.5 5 13.5H10.5V19C10.5 19.83 11.17 20.5 12 20.5C12.83 20.5 13.5 19.83 13.5 19V13.5H19C19.83 13.5 20.5 12.83 20.5 12C20.5 11.17 19.83 10.5 19 10.5Z" fill="currentColor"/>
+        </svg>
+        <h1>Saúde para Todos</h1>
+      </div>
+      <nav aria-label="Navegação Principal">
+        <ul>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#corpo-clinico">Corpo Clínico</a></li>
+          <li><a href="#convenios">Convênios</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <!-- Conteúdo Principal -->
+  <main id="conteudo-principal">
+ 
+    <!-- Seção Especialidades -->
+    <section id="especialidades" aria-labelledby="titulo-especialidades">
+      <div class="container">
+        <h2 id="titulo-especialidades">Nossas Especialidades</h2>
+        <ul class="lista-especialidades">
+          <li>Geriatria</li>
+          <li>Fisioterapia e Reabilitação</li>
+          <li>Neurologia</li>
+          <li>Terapia Ocupacional</li>
+          <li>Oftalmologia</li>
+        </ul>
+      </div>
+    </section>
+ 
+    <!-- Seção Corpo Clínico (Imagens embutidas via código SVG/Base64) -->
+    <section id="corpo-clinico" aria-labelledby="titulo-corpo-clinico">
+      <div class="container">
+        <h2 id="titulo-corpo-clinico">Corpo Clínico</h2>
+        <div class="cards-medicos">
+         
+          <!-- Card Dr. Carlos Eduardo -->
+          <article class="card-medico">
+<img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80"
+             alt="Foto de perfil do Dr. Carlos Eduardo, homem sorrindo vestindo jaleco médico e estetoscópio"
+             class="foto-medico">
+            <h3>Dr. Carlos Eduardo</h3>
+            <p><strong>CRM:</strong> 123456-SP</p>
+            <p><strong>Especialidade:</strong> Diretor Médico e Geriatra</p>
+          </article>
+ 
+          <!-- Card Dra. Ana Maria Silva -->
+          <article class="card-medico">
+<img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=400"
+             alt="Foto da Dra. Ana Maria Silva"
+             class="foto-medico">
+            <h3>Dra. Ana Maria Silva</h3>
+            <p><strong>CRM:</strong> 654321-SP</p>
+            <p><strong>Especialidade:</strong> Fisioterapeuta Especialista em Mobilidade</p>
+          </article>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Seção Convênios -->
+    <section id="convenios" aria-labelledby="titulo-convenios">
+      <div class="container">
+        <h2 id="titulo-convenios">Convênios Aceitos</h2>
+        <ul class="lista-especialidades">
+          <li>Unimed</li>
+          <li>Bradesco Saúde</li>
+          <li>SulAmérica</li>
+          <li>Atendimento Particular com Valor Social</li>
+        </ul>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5500000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Agendar via WhatsApp">
+    <svg class="whatsapp-icon-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 2C6.48 2 2 6.48 2 12C2 13.85 2.5 15.58 3.38 17.07L2 22L7.05 20.67C8.5 21.52 10.19 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.63 15.37C16.43 15.93 15.42 16.43 14.87 16.49C14.39 16.55 13.78 16.58 11.67 15.71C9.03 14.61 7.31 11.9 7.18 11.73C7.05 11.56 6.11 10.31 6.11 9.02C6.11 7.73 6.77 7.1 7.03 6.83C7.29 6.56 7.59 6.5 7.79 6.5C7.99 6.5 8.19 6.5 8.35 6.51C8.53 6.52 8.76 6.44 8.98 6.97C9.21 7.52 9.75 8.85 9.82 8.98C9.88 9.12 9.94 9.29 9.84 9.48C9.75 9.68 9.68 9.77 9.53 9.94C9.38 10.11 9.24 10.24 9.08 10.42C8.94 10.58 8.78 10.75 8.95 11.05C9.12 11.35 9.72 12.33 10.6 13.12C11.73 14.12 12.65 14.44 12.98 14.58C13.28 14.71 13.45 14.68 13.63 14.48C13.81 14.28 14.41 13.58 14.62 13.28C14.83 12.98 15.04 13.03 15.31 13.13C15.58 13.23 17.02 13.94 17.32 14.09C17.62 14.24 17.82 14.31 17.89 14.43C17.96 14.55 17.96 15.08 17.63 15.37Z" fill="currentColor"/>
+    </svg>
+    <span>Agende por WhatsApp</span>
+  </a>
+ 
+  <footer>
+    <div class="container" id="contato">
+      <p>&copy; 2026 Clínica Saúde para Todos. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+<!-- Widget VLibras -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Dependências do Node
+node_modules/
+ 
+# Logs e arquivos de ambiente
+*.log
+.env
