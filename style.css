@@ -10,7 +10,7 @@
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   --font-base-size: 100%;
 }
- 
+
 body.alto-contraste {
   --bg-color: #000000;
   --bg-card: #111827;
@@ -22,12 +22,12 @@ body.alto-contraste {
   --border-color: #ffffff;
   --shadow: none;
 }
- 
+
 html {
   font-size: var(--font-base-size);
   scroll-behavior: smooth;
 }
- 
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.7;
@@ -37,13 +37,13 @@ body {
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
 }
- 
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
- 
+
 .skip-link {
   position: absolute;
   top: -100px;
@@ -56,29 +56,29 @@ body {
   font-weight: bold;
   border-radius: 0 0 8px 8px;
 }
- 
+
 .skip-link:focus {
   top: 0;
 }
- 
+
 :focus-visible {
   outline: 4px solid var(--accent-color) !important;
   outline-offset: 4px !important;
 }
- 
+
 .barra-acessibilidade {
   background-color: #0f172a;
   color: #ffffff;
   padding: 10px 0;
 }
- 
+
 .barra-acessibilidade .container {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
 }
- 
+
 .barra-acessibilidade button {
   background-color: var(--btn-color);
   color: #ffffff;
@@ -89,20 +89,20 @@ body {
   cursor: pointer;
   border-radius: 6px;
 }
- 
+
 body.alto-contraste .barra-acessibilidade button {
   color: #000000;
   background-color: var(--btn-color);
   border-color: #ffffff;
 }
- 
+
 .header-principal {
   background-color: var(--bg-card);
   border-bottom: 1px solid var(--border-color);
   padding: 20px 0;
   box-shadow: var(--shadow);
 }
- 
+
 .header-principal .container {
   display: flex;
   justify-content: space-between;
@@ -110,25 +110,25 @@ body.alto-contraste .barra-acessibilidade button {
   flex-wrap: wrap;
   gap: 20px;
 }
- 
+
 .logo-container {
   display: flex;
   align-items: center;
   gap: 12px;
 }
- 
+
 .logo-img {
   width: 40px;
   height: 40px;
   color: var(--primary-color);
 }
- 
+
 .header-principal h1 {
   margin: 0;
   font-size: 1.8rem;
   color: var(--primary-color);
 }
- 
+
 .header-principal nav ul {
   display: flex;
   list-style: none;
@@ -136,18 +136,18 @@ body.alto-contraste .barra-acessibilidade button {
   padding: 0;
   gap: 15px;
 }
- 
+
 .header-principal nav a {
   color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
   padding: 8px 14px;
 }
- 
+
 main {
   padding: 40px 0;
 }
- 
+
 section {
   background: var(--bg-card);
   padding: 30px;
@@ -156,7 +156,7 @@ section {
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow);
 }
- 
+
 h2 {
   color: var(--primary-color);
   font-size: 1.6rem;
@@ -165,7 +165,7 @@ h2 {
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 10px;
 }
- 
+
 .lista-especialidades {
   list-style: none;
   padding: 0;
@@ -173,7 +173,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 15px;
 }
- 
+
 .lista-especialidades li {
   background: var(--bg-color);
   padding: 14px 18px;
@@ -181,13 +181,13 @@ h2 {
   border-left: 5px solid var(--primary-color);
   font-weight: 600;
 }
- 
+
 .cards-medicos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
- 
+
 .card-medico {
   background: var(--bg-color);
   border: 1px solid var(--border-color);
@@ -196,7 +196,7 @@ h2 {
   display: flex;
   flex-direction: column;
 }
- 
+
 .foto-medico {
   width: 120px;
   height: 120px;
@@ -207,18 +207,35 @@ h2 {
   border: 3px solid var(--primary-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
- 
+
 .card-medico h3 {
   margin: 0 0 8px 0;
   color: var(--text-color);
   text-align: center;
 }
- 
+
 .card-medico p {
   margin: 4px 0;
   color: var(--text-muted);
 }
- 
+
+/* Estilização da Seção do Google Maps */
+.mapa-container {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  margin-top: 1rem;
+}
+
+.mapa-container iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
@@ -235,12 +252,12 @@ h2 {
   gap: 10px;
   z-index: 999;
 }
- 
+
 .whatsapp-icon-img {
   width: 28px;
   height: 28px;
 }
- 
+
 footer {
   text-align: center;
   padding: 20px 0;
