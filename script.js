@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnDiminuir = document.getElementById('btn-diminuir-fonte');
   const btnReset = document.getElementById('btn-reset-fonte');
   const btnAltoContraste = document.getElementById('btn-alto-contraste');
+  const SCRIPT_URL = 'https://docs.google.com/spreadsheets/d/10LuAgT-vpmO84yKCzvsywXC5-VE-ui6w7Yj3xKR6_CI/edit?usp=sharing';
 
   // Aplica o Alto Contraste salvo previamente
   const isAltoContraste = localStorage.getItem('altoContraste') === 'true';
