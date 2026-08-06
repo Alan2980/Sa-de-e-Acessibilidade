@@ -62,7 +62,7 @@ body {
 }
 
 :focus-visible {
-  outline: 4px solid var(--accent-color) !important;
+  outline: 4px solid var(--primary-color) !important;
   outline-offset: 4px !important;
 }
 
