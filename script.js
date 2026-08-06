@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnDiminuir = document.getElementById('btn-diminuir-fonte');
   const btnReset = document.getElementById('btn-reset-fonte');
   const btnAltoContraste = document.getElementById('btn-alto-contraste');
-  const SCRIPT_URL = 'https://docs.google.com/spreadsheets/d/10LuAgT-vpmO84yKCzvsywXC5-VE-ui6w7Yj3xKR6_CI/edit?usp=sharing';
 
   // Aplica o Alto Contraste salvo previamente
   const isAltoContraste = localStorage.getItem('altoContraste') === 'true';
@@ -78,8 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const statusEnvio = document.getElementById('status-envio');
   const btnEnviar = document.getElementById('btn-enviar');
 
-  // COLE AQUI A URL QUE O GOOGLE APPS SCRIPT GEROU PARA VOCÊ
-  const SCRIPT_URL = 'SUA_URL_DO_GOOGLE_APPS_SCRIPT_AQUI';
+  // URL DO SEU GOOGLE APPS SCRIPT
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwrJrs2w8s44o4v17ecTAQVV5sES_RzhfMCx_QSGMFw8VTJuYF3QN9sQ_1Dv83do4PxAQ/exec';
 
   if (formContato) {
     formContato.addEventListener('submit', (e) => {
