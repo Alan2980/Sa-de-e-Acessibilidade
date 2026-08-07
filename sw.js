@@ -1,0 +1,1 @@
+const CACHE_NAME="saude-v1",urlsToCache=["/","/index.html","/style.css","/script.js","/manifest.json"];self.addEventListener("install",e=>{e.waitUntil(caches.open(CACHE_NAME).then(e=>e.addAll(urlsToCache))),self.skipWaiting()}),self.addEventListener("fetch",e=>{"POST"!==e.request.method&&e.respondWith(caches.match(e.request).then(t=>t||fetch(e.request)))});
